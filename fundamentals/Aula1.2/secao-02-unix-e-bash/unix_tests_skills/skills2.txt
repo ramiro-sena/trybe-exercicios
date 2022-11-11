@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Frontend
+Backend
+Javascript
+Git
+SQL
