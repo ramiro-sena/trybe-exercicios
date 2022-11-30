@@ -1,14 +1,10 @@
 const a = 2789;
-const b = 2347;
+const b = 2742;
 
 if (a > b){
   console.log(a);
-}
-
-if (b > a){
+} else if (b > a){
   console.log(b)
-}
-
-if (b == a){
+} else {
   console.log("same value")
 }
