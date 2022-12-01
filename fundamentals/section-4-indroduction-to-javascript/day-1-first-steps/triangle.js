@@ -4,7 +4,7 @@ const a3 = 90;
 
 function check_triangle(){
   sum = (a1 + a2 + a3)
-  if (typeof sum != 'number'){
+  if (a1 < 0 || a2 < 0 || a3 < 00){
     return "error";
   } else if (sum == 180){
     return "true"; 
