@@ -8,3 +8,10 @@ for (let number of numbers){
 let mean = sum / numbers.length;
 
 console.log(mean);
+
+if( mean > 20) {
+  console.log("valor maior que 20");
+} else {
+  console.log("valor menor ou igual a 20");
+}
+
