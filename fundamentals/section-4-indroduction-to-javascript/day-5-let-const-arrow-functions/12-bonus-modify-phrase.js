@@ -3,4 +3,15 @@ const substituaX = (name) => {
   return `${frase.split('x')[0]}${name}${frase.split('x')[1]}`;
 }
 
-console.log(substituaX('Bebeto'))
+const minhasSkills = (phrase) => {
+  const skills = ['git, javascript, bash'];
+  let newPhrase = `${phrase}
+Minhas três principais habilidades são:
+${skills}`
+  return newPhrase;
+}
+
+console.log(minhasSkills(substituaX('Bebeto')));
+
+
+
