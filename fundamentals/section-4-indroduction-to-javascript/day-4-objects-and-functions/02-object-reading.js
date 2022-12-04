@@ -21,4 +21,6 @@ leitor.livrosFavoritos.push({
   editora: 'Rocco',
 })
 
-console.log(leitor)
+let newString = `${leitor.nome} tem ${leitor.livrosFavoritos.length} livros favoritos`
+
+console.log(newString)
