@@ -13,4 +13,4 @@ function getFactorial(number){
   return factorial
 }
 
-console.log(getFactorial(4));
+console.log(getFactorial(value));
