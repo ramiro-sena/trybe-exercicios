@@ -5,9 +5,14 @@ const changeTitle = () => {
   let title = document.getElementsByTagName('h1')[0].innerText;
   document.getElementsByTagName('h1')[0].innerHTML = title.toUpperCase();
 }
-
+const printByTagName = () => {
+  for (element of document.getElementsByTagName('p')){
+    console.log(element.innerText);
+  }
+}
 
 changeDescription();
 changeYellowSquareColor();
 changeRedSquareColor();
 changeTitle();
+printByTagName();
