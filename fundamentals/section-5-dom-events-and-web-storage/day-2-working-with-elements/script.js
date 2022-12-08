@@ -82,6 +82,11 @@ for (let el of document.getElementsByTagName('h3')){
   el.className = 'description';
 }
 
-//remove left section
+//12 remove left section
 
 main.removeChild(document.getElementsByClassName('left-content')[0])
+
+//13 centralize right section
+
+sectionRight.style.marginRight = 'auto';
+console.log(sectionRight.style);
