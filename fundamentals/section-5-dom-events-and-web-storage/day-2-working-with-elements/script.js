@@ -16,13 +16,18 @@ const section = document.createElement('section');
 section.className = 'center-content';
 main.appendChild(section);
 
-//04 Add section tag with right-content class
+//04 Add p tag as section child
+const pTag = document.createElement('p');
+pTag.innerText = 'Some text';
+section.appendChild(pTag)
+
+//05 Add section tag with right-content class
 
 const sectionRight = document.createElement('section');
 sectionRight.className = 'right-content';
 main.appendChild(sectionRight);
 
-//05 Add section tag with left-content class
+//06 Add section tag with left-content class
 
 const sectionLeft = document.createElement('section');
 sectionLeft.className = 'left-content';
