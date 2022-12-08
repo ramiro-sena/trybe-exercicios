@@ -15,3 +15,9 @@ bodyElement.appendChild(main);
 const section = document.createElement('section');
 section.className = 'center-content';
 main.appendChild(section);
+
+//04 Add section tag with right-content class
+
+const sectionRight = document.createElement('section');
+sectionRight.className = 'right-content';
+main.appendChild(sectionRight);
