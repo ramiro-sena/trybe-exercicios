@@ -38,4 +38,27 @@ main.appendChild(sectionLeft);
 const image = document.createElement('img');
 image.src = 'https://picsum.photos/200';
 image.className = 'small-image';
-sectionRight.appendChild(image)
+sectionLeft.appendChild(image);
+
+//08 Add unsorted list
+
+const unsortedList = document.createElement('ul');
+
+const numbers = [
+  'um',
+  'dois',
+  'três',
+  'quatro',
+  'cinco',
+  'seis',
+  'sete',
+  'oito',
+  'nove',
+  'dez'];
+
+for (let i = 1; i <= 10; i++) {
+  let li = document.createElement('li');
+  li.innerText = numbers[i - 1];
+  unsortedList.appendChild(li);
+}
+sectionRight.appendChild(unsortedList);
