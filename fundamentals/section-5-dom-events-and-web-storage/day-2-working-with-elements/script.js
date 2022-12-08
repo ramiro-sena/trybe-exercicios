@@ -1,14 +1,14 @@
 //01 Add h1 tag
 
-const bodyElement = document.getElementsByTagName('body')[0];
-const titleElement = document.createElement('h1')
-titleElement.innerText = 'TrybeTrip - Agência de Viagens';
-bodyElement.appendChild(titleElement);
+const elementH1 = document.createElement('h1')
+elementH1.innerText = 'TrybeTrip - Agência de Viagens';
+document.body.appendChild(elementH1);
 
 //02 Add main tag
 
 const main = document.createElement('main');
-bodyElement.appendChild(main);
+main.className = 'main-content'
+document.body.appendChild(main);
 
 //03 Add section tag with center-content class
 
@@ -74,7 +74,7 @@ for (let tag of h3Tags){
 }
 
 //10 add class to h1 tag
-titleElement.className = 'title'
+elementH1.className = 'title'
 
 //11 add class to all h3 tags
 
