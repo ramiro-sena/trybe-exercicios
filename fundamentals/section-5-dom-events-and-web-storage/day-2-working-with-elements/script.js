@@ -82,3 +82,6 @@ for (let el of document.getElementsByTagName('h3')){
   el.className = 'description';
 }
 
+//remove left section
+
+main.removeChild(document.getElementsByClassName('left-content')[0])
