@@ -72,3 +72,7 @@ for (let tag of h3Tags){
   element.className = 'description';
   main.appendChild(element);
 }
+
+//10 add class to h1 tag
+titleElement.className = 'title'
+
