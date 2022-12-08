@@ -95,3 +95,7 @@ console.log(sectionRight.style);
 
 sectionRight.parentElement.style.backgroundColor = 'green'
 
+//15 remove two last items from list
+
+unsortedList.removeChild(unsortedList.lastChild);
+unsortedList.removeChild(unsortedList.lastChild);
