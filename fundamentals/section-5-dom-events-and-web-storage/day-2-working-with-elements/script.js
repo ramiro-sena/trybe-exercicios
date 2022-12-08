@@ -9,3 +9,9 @@ bodyElement.appendChild(titleElement);
 
 const main = document.createElement('main');
 bodyElement.appendChild(main);
+
+//03 Add section tag with center-content class
+
+const section = document.createElement('section');
+section.className = 'center-content';
+main.appendChild(section);
