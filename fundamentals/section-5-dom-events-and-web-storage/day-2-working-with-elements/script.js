@@ -62,3 +62,13 @@ for (let i = 1; i <= 10; i++) {
   unsortedList.appendChild(li);
 }
 sectionRight.appendChild(unsortedList);
+
+//09 adding h3 tag
+
+let h3Tags = ['tag 1', 'tag 2', 'tag 3'];
+for (let tag of h3Tags){
+  let element = document.createElement('h3');
+  element.innerText = tag;
+  element.className = 'description';
+  main.appendChild(element);
+}
