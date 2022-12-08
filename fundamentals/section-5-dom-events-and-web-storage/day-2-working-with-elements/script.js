@@ -32,3 +32,10 @@ main.appendChild(sectionRight);
 const sectionLeft = document.createElement('section');
 sectionLeft.className = 'left-content';
 main.appendChild(sectionLeft);
+
+//07 Add image
+
+const image = document.createElement('img');
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+sectionRight.appendChild(image)
