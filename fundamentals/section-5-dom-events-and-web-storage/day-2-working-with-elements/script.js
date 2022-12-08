@@ -69,10 +69,16 @@ let h3Tags = ['tag 1', 'tag 2', 'tag 3'];
 for (let tag of h3Tags){
   let element = document.createElement('h3');
   element.innerText = tag;
-  element.className = 'description';
+  //element.className = 'description';
   main.appendChild(element);
 }
 
 //10 add class to h1 tag
 titleElement.className = 'title'
+
+//11 add class to all h3 tags
+
+for (let el of document.getElementsByTagName('h3')){
+  el.className = 'description';
+}
 
