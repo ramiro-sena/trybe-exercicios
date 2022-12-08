@@ -90,3 +90,8 @@ main.removeChild(document.getElementsByClassName('left-content')[0])
 
 sectionRight.style.marginRight = 'auto';
 console.log(sectionRight.style);
+
+//14 change section color
+
+sectionRight.parentElement.style.backgroundColor = 'green'
+
