@@ -41,3 +41,16 @@ const createDaysOfTheMonth = () => {
 
 
 createDaysOfTheMonth();
+
+
+// --------------- PARTE 2
+
+const createButtons = (button_name) => {
+  const buttonElement = document.createElement('button');
+  buttonElement.innerText = button_name;
+  buttonElement.id = 'btn-holiday';
+  const buttonsContainer = document.querySelector('.buttons-container');
+  buttonsContainer.appendChild(buttonElement);
+} 
+
+createButtons('Feriados');
