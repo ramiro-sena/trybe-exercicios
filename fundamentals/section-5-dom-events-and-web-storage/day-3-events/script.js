@@ -26,7 +26,10 @@ const createDaysOfTheMonth = () => {
     liElement.innerText = day;
     liElement.className = 'day';
     if(holidaysList.indexOf(day) !== -1){
-      liElement.className = 'day holiday'
+      liElement.className += ' holiday';
+    }
+    if(frydayList.indexOf(day) !== -1){
+      liElement.className += ' friday';
     }
     ulElement.appendChild(liElement);
   }
