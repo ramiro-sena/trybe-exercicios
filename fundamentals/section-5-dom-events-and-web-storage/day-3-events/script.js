@@ -19,7 +19,7 @@ createDaysOfTheWeek();
 
 const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 const holidaysList = [24, 25, 31];
-const frydayList = [4, 11, 18, 24];
+const fridayList = [4, 11, 18, 25];
 const monthDaysList = document.querySelector('.days-container')
 const createDaysOfTheMonth = () => {
   const ulElement = document.createElement('ul');
@@ -31,7 +31,7 @@ const createDaysOfTheMonth = () => {
     if (holidaysList.indexOf(day) !== -1) {
       liElement.className += ' holiday';
     }
-    if (frydayList.indexOf(day) !== -1) {
+    if (fridayList.indexOf(day) !== -1) {
       liElement.className += ' friday';
     }
     ulElement.appendChild(liElement);
@@ -45,10 +45,10 @@ createDaysOfTheMonth();
 
 // --------------- PARTE 2
 
-const createButtons = (button_name, button_class) => {
+const createButtons = (button_name, button_id) => {
   const buttonElement = document.createElement('button');
   buttonElement.innerText = button_name;
-  buttonElement.id = button_class;
+  buttonElement.id = button_id;
   const buttonsContainer = document.querySelector('.buttons-container');
   buttonsContainer.appendChild(buttonElement);
 }
@@ -73,5 +73,17 @@ document.querySelector('#btn-holiday').addEventListener('click', onClickHoliday)
 
 createButtons('Sexta-feira', 'btn-friday')
 
+// ---------------- PARTE 5
 
+const fridayEl = document.querySelectorAll('.friday');
+
+const onClickFriday = () => {
+  const string = 'Sextouu!!'
+  console.log(fridayEl[0].innerText)
+  for (let i in fridayEl){
+    fridayEl[i].innerText = fridayEl[i].innerText === string ? fridayList[i] : string;
+  }
+}
+
+document.querySelector('#btn-friday').addEventListener('click', onClickFriday) 
 
