@@ -72,3 +72,6 @@ document.querySelector('#btn-holiday').addEventListener('click', onClickHoliday)
 // ---------------- PARTE 4
 
 createButtons('Sexta-feira', 'btn-friday')
+
+
+
