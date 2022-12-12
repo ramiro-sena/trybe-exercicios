@@ -51,6 +51,24 @@ const createButtons = (button_name) => {
   buttonElement.id = 'btn-holiday';
   const buttonsContainer = document.querySelector('.buttons-container');
   buttonsContainer.appendChild(buttonElement);
-} 
+}
 
 createButtons('Feriados');
+
+// ---------------- PARTE 3
+
+const onClickHoliday = () => {
+  const elements = document.querySelectorAll('.holiday');
+
+  const color = elements[0].style.backgroundColor !== 'rgb(255, 180, 180)' ? 'rgb(255, 180, 180)' : 'rgb(238,238,238)'
+  for (let element of elements) {
+    element.style.backgroundColor = color;
+  }
+  console.log('clicked')
+}
+
+console.log(document.querySelector('#btn-holiday'))
+
+document.querySelector('#btn-holiday').addEventListener('click', onClickHoliday);
+
+
