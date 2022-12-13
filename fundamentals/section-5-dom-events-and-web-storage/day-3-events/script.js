@@ -120,3 +120,10 @@ const addCustomTask = (task_name) => {
   document.querySelector('.my-tasks').appendChild(taskElement);
 }
 
+// ---------------- PARTE 8
+
+const addTaskNote = (color) => {
+  const container = document.createElement('div');
+  container.className = 'task';
+  
+}
