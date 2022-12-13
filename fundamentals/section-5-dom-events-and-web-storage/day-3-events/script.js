@@ -92,5 +92,11 @@ document.querySelector('#btn-friday').addEventListener('click', onClickFriday)
 const zoomed_size = '25px' 
 
 const days_container = document.querySelector('.days-container');
-const onHover = (event) => console.log(event.target);
-days_container.addEventListener('mouseover', onHover);
+const onMouseHover = (event) => {
+  // console.log(event.target.style)
+} ;
+const onMouseOut = (event) => {
+  
+}
+days_container.addEventListener('mouseout', onMouseOut)
+days_container.addEventListener('mouseover', onMouseHover);
