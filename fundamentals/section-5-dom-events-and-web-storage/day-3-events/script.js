@@ -95,14 +95,14 @@ const days_container = document.querySelector('.days-container');
 const onMouseHover = (event) => {
   if (event.target.tagName == 'LI') {
     event.target.style.fontSize = '35px';
-    console.log(event.target.style)
+    //console.log(event.target.style)
   }
 
 };
 const onMouseOut = (event) => {
   if (event.target.tagName == 'LI') {
     event.target.style.fontSize = '';
-    console.log(event.target.style)
+    //console.log(event.target.style)
   }
 
 }
@@ -134,7 +134,7 @@ const addTaskColor = (color) => {
 // ---------------- PARTE 8
 
 const taskSelector = (e) => {
-  if(e.target.className === 'task selected' ){
+  if (e.target.className === 'task selected') {
     e.target.className = 'task';
   } else if (e.target.className === 'task') {
     e.target.className = 'task selected'
@@ -147,7 +147,7 @@ document.querySelector('.my-tasks').addEventListener('click', taskSelector);
 const appendTask = (task_name, color) => {
   addCustomTask(task_name);
   addTaskColor(color);
-} 
+}
 
 appendTask('cozinhar', 'red');
 appendTask('Caminhar', 'green');
@@ -157,6 +157,17 @@ appendTask('Tocar Violao', 'orange');
 // -----------------  PARTE 10
 
 const assign_day_color = (event) => {
+  const selectedTask = document.getElementsByClassName('task selected')[0];
   const element = event.target;
-  element.style.backgroundColor = 'red'
+  if (element.tagName !== 'LI') return
+  if (element.style.color != selectedTask.style.backgroundColor) {
+    element.style.color = selectedTask.style.backgroundColor
+  } else {
+    element.style.color = 'rgb(119, 119, 119)';
+  }
 }
+
+document.querySelector('.days-container').addEventListener('click', assign_day_color)
+
+
+
