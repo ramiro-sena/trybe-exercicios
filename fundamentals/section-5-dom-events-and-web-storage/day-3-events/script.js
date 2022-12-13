@@ -110,3 +110,10 @@ const onMouseOut = (event) => {
 
 days_container.addEventListener('mouseout', onMouseOut)
 days_container.addEventListener('mouseover', onMouseHover);
+
+
+// ---------------- PARTE 7
+
+const addCustomTask = () => {
+  
+}
