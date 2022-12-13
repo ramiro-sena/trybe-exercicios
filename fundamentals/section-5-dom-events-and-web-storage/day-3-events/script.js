@@ -125,5 +125,8 @@ const addCustomTask = (task_name) => {
 const addTaskNote = (color) => {
   const container = document.createElement('div');
   container.className = 'task';
-  
+  container.style.backgroundColor = color;
+  document.querySelector('.my-tasks').appendChild(container);
 }
+
+
