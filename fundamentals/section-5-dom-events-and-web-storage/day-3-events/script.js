@@ -134,10 +134,21 @@ const addTaskColor = (color) => {
 // ---------------- PARTE 8
 
 const taskSelector = (e) => {
-  if(e.target.className === 'task selected'){
+  if(e.target.className === 'task selected' ){
     e.target.className = 'task';
   } else if (e.target.className === 'task') {
     e.target.className = 'task selected'
   }
-
+  console.log(e.target)
 }
+
+document.querySelector('.my-tasks').addEventListener('click', taskSelector);
+
+const appendTask = (task_name, color) => {
+  addCustomTask(task_name);
+  addTaskColor(color);
+} 
+
+appendTask('cozinhar', 'red');
+appendTask('Caminhar', 'green');
+appendTask('Tocar Violao', 'orange');
