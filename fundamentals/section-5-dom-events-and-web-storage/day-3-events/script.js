@@ -79,7 +79,6 @@ const fridayEl = document.querySelectorAll('.friday');
 
 const onClickFriday = () => {
   const string = 'Sextouu!!'
-  console.log(fridayEl[0].innerText)
   for (let i in fridayEl){
     fridayEl[i].innerText = fridayEl[i].innerText === string ? fridayList[i] : string;
   }
@@ -87,3 +86,11 @@ const onClickFriday = () => {
 
 document.querySelector('#btn-friday').addEventListener('click', onClickFriday) 
 
+
+// ---------------- PARTE 6
+
+const zoomed_size = '25px' 
+
+const days_container = document.querySelector('.days-container');
+const onHover = (event) => console.log(event.target);
+days_container.addEventListener('mouseover', onHover);
