@@ -152,3 +152,11 @@ const appendTask = (task_name, color) => {
 appendTask('cozinhar', 'red');
 appendTask('Caminhar', 'green');
 appendTask('Tocar Violao', 'orange');
+
+
+// -----------------  PARTE 10
+
+const assign_day_color = (event) => {
+  const element = event.target;
+  element.style.backgroundColor = 'red'
+}
