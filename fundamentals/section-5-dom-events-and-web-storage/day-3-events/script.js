@@ -117,4 +117,6 @@ days_container.addEventListener('mouseover', onMouseHover);
 const addCustomTask = (task_name) => {
   const taskElement = document.createElement('span');
   taskElement.innerText = task_name;
+  document.querySelector('.my-tasks').appendChild(taskElement);
 }
+
