@@ -122,7 +122,7 @@ const addCustomTask = (task_name) => {
 
 // ---------------- PARTE 8
 
-const addTaskNote = (color) => {
+const addTaskColor = (color) => {
   const container = document.createElement('div');
   container.className = 'task';
   container.style.backgroundColor = color;
@@ -130,3 +130,14 @@ const addTaskNote = (color) => {
 }
 
 
+
+// ---------------- PARTE 8
+
+const taskSelector = (e) => {
+  if(e.target.className === 'task selected'){
+    e.target.className = 'task';
+  } else if (e.target.className === 'task') {
+    e.target.className = 'task selected'
+  }
+
+}
