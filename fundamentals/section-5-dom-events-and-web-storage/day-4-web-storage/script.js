@@ -68,6 +68,11 @@ const settingsOnClick = (event) => {
   // console.log('key:', key);
   // console.log('value:', value);
   document.body.style[key] = value
+
+  const local_settings = JSON.parse(localStorage.getItem('my-settings'))
+  local_settings[key] = value;
+  localStorage.setItem('my-settings', JSON.stringify(local_settings))
+
 }
 
 button_container.addEventListener('click', settingsOnClick)
