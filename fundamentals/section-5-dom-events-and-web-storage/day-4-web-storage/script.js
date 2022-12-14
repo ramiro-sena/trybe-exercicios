@@ -7,6 +7,7 @@ const createSettings = (name, key, options) => {
   const btn_group = document.createElement('div');
   btn_group.className = 'btn-group';
   btn_group.appendChild(title);
+  btn_group.id = key;
 
   for (let option of options) {
     let btn = document.createElement('button');
@@ -37,5 +38,14 @@ window.onload = () => {
 
 }
 
+const button_container = document.querySelector('.settings-container');
 
+const settingsOnClick = (event) => {
+  if(event.target.tagName !== 'BUTTON') return;
+  const value = event.target.innerText;
+  const key = event.target.parentElement.id;
+  console.log('key:', key)
+  console.log('value:', value);
+}
 
+button_container.addEventListener('click', settingsOnClick)
