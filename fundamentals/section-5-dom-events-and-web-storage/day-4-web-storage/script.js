@@ -44,8 +44,10 @@ const settingsOnClick = (event) => {
   if(event.target.tagName !== 'BUTTON') return;
   const value = event.target.innerText;
   const key = event.target.parentElement.id;
-  console.log('key:', key)
+  console.log('key:', key);
   console.log('value:', value);
+
+  document.body.style[key] = value
 }
 
 button_container.addEventListener('click', settingsOnClick)
