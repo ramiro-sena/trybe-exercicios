@@ -36,17 +36,37 @@ window.onload = () => {
   createSettings('Tipo da fonte', 'font-family',
     ['Arial', 'Times New Roman']);
 
+  //check local storage
+  const default_style = document.body.style;
+  const settings =
+  {
+    'background-color': '',
+    'color': '',
+    'font-size': '',
+    'line-height': '',
+    'font-family': '',
+  }
+
+  if (localStorage.getItem('my-settings') === null){
+    localStorage.setItem('my-settings', JSON.stringify(settings));
+  } else {
+    const retrieved = JSON.parse(localStorage.getItem('my-settings'))
+    for (let key in retrieved){
+      console.log(key, retrieved[key])
+      document.body.style[key] = retrieved[key]
+    }
+  }
+
 }
 
 const button_container = document.querySelector('.settings-container');
 
 const settingsOnClick = (event) => {
-  if(event.target.tagName !== 'BUTTON') return;
+  if (event.target.tagName !== 'BUTTON') return;
   const value = event.target.innerText;
   const key = event.target.parentElement.id;
-  console.log('key:', key);
-  console.log('value:', value);
-
+  // console.log('key:', key);
+  // console.log('value:', value);
   document.body.style[key] = value
 }
 
