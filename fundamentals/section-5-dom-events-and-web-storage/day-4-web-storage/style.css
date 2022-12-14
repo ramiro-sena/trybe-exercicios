@@ -17,3 +17,11 @@
   display: block;
   width: 100%;
 }
+
+main {
+  text-align: center;
+}
+
+main p {
+  text-align: left;
+}
