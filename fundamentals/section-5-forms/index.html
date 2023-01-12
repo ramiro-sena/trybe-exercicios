@@ -15,29 +15,38 @@
       margin-top: 10vh;
     "
   >
-    <fieldset
-      style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px"
-    >
-      <legend>Formulário</legend>
-      <label for="full-name">
-        Nome:
-        <input id="full-name" type="text" maxlength="50" minlength="10" />
-      </label>
-      <label for="email">
-        Email:
-        <input id="email" type="email" minlength="10" maxlength="50" />
-      </label>
-      <label><input type="radio" name="city" checked />Cidade</label>
-      <label><input type="radio" name="city" />Campo</label>
-      <label><input type="radio" name="city" />Praia</label>
-      <label><input type="radio" name="city" />Montanhas</label>
-      <label for="answer"> Espaço para digitar a resposta: </label>
-      <textarea id="answer" rows="4" maxlength="500"></textarea>
-      <label>
-        <input type="checkbox"/>
-        Concordo que imagens da minhas férias poderão ser usadas na divulgação
-        de concursos futuros
-      </label>
-    </fieldset>
+    <form>
+      <fieldset
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          max-width: 500px;
+        "
+      >
+        <legend>Formulário</legend>
+        <label for="full-name">
+          Nome:
+          <input id="full-name" type="text" maxlength="50" minlength="10" />
+        </label>
+        <label for="email">
+          Email:
+          <input id="email" type="email" minlength="10" maxlength="50" />
+        </label>
+        <label><input type="radio" name="city" checked />Cidade</label>
+        <label><input type="radio" name="city" />Campo</label>
+        <label><input type="radio" name="city" />Praia</label>
+        <label><input type="radio" name="city" />Montanhas</label>
+        <label for="answer"> Espaço para digitar a resposta: </label>
+        <textarea id="answer" rows="4" maxlength="500"></textarea>
+        <label>
+          <input type="checkbox" />
+          Concordo que imagens da minhas férias poderão ser usadas na divulgação
+          de concursos futuros
+        </label>
+      </fieldset>
+      <button type="submit">Enviar</button>
+      
+    </form>
   </body>
 </html>
