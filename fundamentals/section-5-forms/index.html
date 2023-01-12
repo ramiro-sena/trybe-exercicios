@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <fieldset style="display: flex; flex-direction: column;">
+      <label for="full-name">
+        Nome:
+        <input id="full-name" type="text" maxlength="50" minlength="10" />
+      </label>
+      <label for="email">
+        Email:
+        <input id="email" type="email" minlength="10" maxlength="50" />
+      </label>
+      <label>
+        <input type="radio" name="city" checked/>
+        Cidade
+      </label>
+      <label>
+        <input type="radio" name="city"/>
+        Campo
+      </label>
+      <label>
+        <input type="radio" name="city"/>
+        Praia
+      </label>
+      <label>
+        <input type="radio" name="city"/>
+        Montanhas
+      </label>
+      <label>
+        Espaço para digitar a resposta:
+        <textarea rows="4" maxlength="500"></textarea>
+      </label>
+      <label>
+        <input type="check"/>
+        Concordo que imagens da minhas férias poderão ser usadas na divulgação de concursos futuros
+      </label>
+
+    </fieldset>
+  </body>
+</html>
