@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10vh;
+    "
+  >
+    <form>
+      <fieldset
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          max-width: 500px;
+        "
+      >
+        <legend>Formulário</legend>
+        <label for="full-name">
+          Nome:
+          <input required id="full-name" type="text" maxlength="50" minlength="10" />
+        </label>
+        <label for="email">
+          Email:
+          <input id="email" type="email" minlength="10" maxlength="50"/>
+        </label>
+        <label><input type="radio" name="city" />Cidade</label>
+        <label><input type="radio" name="city" />Campo</label>
+        <label><input type="radio" name="city" />Praia</label>
+        <label><input type="radio" name="city" />Montanhas</label>
+        <label for="answer"> Espaço para digitar a resposta: </label>
+        <textarea id="answer" rows="4" maxlength="500"></textarea>
+        <label>
+          <input id="consent" type="checkbox" />
+          Concordo que imagens da minhas férias poderão ser usadas na divulgação
+          de concursos futuros
+        </label>
+      </fieldset>
+      <button disabled id="submit" type="submit">Enviar</button>
+      <button id="clear" type="reset">Apagar</button>
+    </form>
+    <script src="script.js" defer></script>
+  </body>
+</html>
