@@ -8,6 +8,8 @@ handleClear = () => {
 }
 
 
+
 window.onload = () => {
-  submit.addEventListener('click', handleClear);
+  clear.addEventListener('click', handleClear);
+
 }
