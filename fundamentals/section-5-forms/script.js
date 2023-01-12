@@ -16,8 +16,10 @@ validateForm = (e) => {
   const name_len = document.querySelector('#full-name').value.length;
   const val_name = name_len > 10 && name_len < 50;
   
-  
+  const email_len = document.querySelector('#email').value.length;
+  const val_email = name_len > 10 && name_len < 50;
 
+  
   console.log(val_name)
 }
 
