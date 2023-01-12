@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <fieldset style="display: flex; flex-direction: column;">
+    <fieldset style="display: flex; flex-direction: column; gap: 1rem;">
       <label for="full-name">
         Nome:
         <input id="full-name" type="text" maxlength="50" minlength="10" />
@@ -17,26 +17,14 @@
         Email:
         <input id="email" type="email" minlength="10" maxlength="50" />
       </label>
-      <label>
-        <input type="radio" name="city" checked/>
-        Cidade
-      </label>
-      <label>
-        <input type="radio" name="city"/>
-        Campo
-      </label>
-      <label>
-        <input type="radio" name="city"/>
-        Praia
-      </label>
-      <label>
-        <input type="radio" name="city"/>
-        Montanhas
-      </label>
-      <label>
+      <label><input type="radio" name="city" checked/>Cidade</label>
+      <label><input type="radio" name="city"/>Campo</label>
+      <label><input type="radio" name="city"/>Praia</label>
+      <label><input type="radio" name="city"/>Montanhas</label>
+      <label for="answer">
         Espaço para digitar a resposta:
-        <textarea rows="4" maxlength="500"></textarea>
       </label>
+      <textarea id="answer"  rows="4" maxlength="500"></textarea>
       <label>
         <input type="check"/>
         Concordo que imagens da minhas férias poderão ser usadas na divulgação de concursos futuros
