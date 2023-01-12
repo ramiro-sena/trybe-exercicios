@@ -17,18 +17,26 @@ validateForm = () => {
   const val_name = name_len > 10 && name_len < 50;
   
   const email_len = document.querySelector('#email').value.length;
-  const val_email = name_len > 10 && name_len < 50;
+  const val_email = email_len > 10 && name_len < 50;
 
   const answer_len = document.querySelector('#answer').value.length;
-  const val_answer = name_len < 500;
+  const val_answer = answer_len < 500;
 
   return val_name && val_email && val_answer
 }
 
-
+handleSubmit = (e) => {
+  const validation = validateForm()
+  if (validation) {
+    alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.')
+  } else {
+    alert('Dados inválidos')
+  }
+}
 
 window.onload = () => {
   clear.addEventListener('click', handleClear);
   consent.addEventListener('change', handleConsent);
-  submit.addEventListener('click', validateForm);
+  submit.addEventListener('click', handleSubmit);
+
 }
