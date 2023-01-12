@@ -12,16 +12,20 @@ handleConsent = (e) => {
   submit.disabled = !e.target.checked
 }
 
-validateForm = (e) => {
+validateForm = () => {
   const name_len = document.querySelector('#full-name').value.length;
   const val_name = name_len > 10 && name_len < 50;
   
   const email_len = document.querySelector('#email').value.length;
   const val_email = name_len > 10 && name_len < 50;
 
-  
-  console.log(val_name)
+  const answer_len = document.querySelector('#answer').value.length;
+  const val_answer = name_len < 500;
+
+  return val_name && val_email && val_answer
 }
+
+
 
 window.onload = () => {
   clear.addEventListener('click', handleClear);
