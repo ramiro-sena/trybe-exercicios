@@ -17,29 +17,41 @@
             <fieldset>
                 <div class="col md-6">
                     <label class="form-label" for="fullName">Nome Completo:</label>
-                    <input class="form-control" type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" maxlength="40"
-                        minlength="10" required>
+                    <input class="form-control" type="text" id="fullName" name="fullName"
+                        placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>
                 </div>
 
                 <div class="col md-6">
                     <label class="form-label" for="email">Endereço de e-mail:</label>
-                    <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="50"
-                        minlength="10" required>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu e-mail"
+                        maxlength="50" minlength="10" required>
                 </div>
 
+                <div class="col md 3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="destination1" className="radios"
+                            name="destinations" value="Cidade" required>
+                        <label class="form-check-label" for="destination1">Cidade</label>
+                    </div>
+                    <div class="form-check">
 
-                <label for="destination1">Cidade</label>
-                <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade" required>
+                        <input class="form-check-input" type="radio" id="destination2" className="radios"
+                            name="destinations" value="Campo" required>
+                        <label class="form-check-label" for="destination2">Campo</label>
+                    </div>
+                    <div class="form-check">
 
-                <label for="destination2">Campo</label>
-                <input type="radio" id="destination2" className="radios" name="destinations" value="Campo" required>
+                        <input class="form-check-input" type="radio" id="destination3" className="radios"
+                            name="destinations" value="Praia" required>
+                        <label class="form-check-label" for="destination3">Praia</label>
+                    </div>
+                    <div class="form-check">
 
-                <label for="destination3">Praia</label>
-                <input type="radio" id="destination3" className="radios" name="destinations" value="Praia" required>
-
-                <label for="destination4">Montanhas</label>
-                <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas" required>
-                <br />
+                        <input class="form-check-input" type="radio" id="destination4" className="radios"
+                            name="destinations" value="Montanhas" required>
+                        <label class="form-check-label" for="destination4">Montanhas</label>
+                    </div>
+                </div>
 
                 <label for="why">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso
                     TrybeTrip?</label>
