@@ -12,22 +12,23 @@
 
 <body>
     <div class="container mt-5">
-        <h1>Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
+        <h1 class="col-md-12">Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
         <form class="row g-3">
-            <fieldset>
-                <div class="col md-6">
+            <!-- <fieldset> -->
+                
+                <div class="col-md-6">
                     <label class="form-label" for="fullName">Nome Completo:</label>
                     <input class="form-control" type="text" id="fullName" name="fullName"
                         placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>
                 </div>
 
-                <div class="col md-6">
+                <div class="col-md-6">
                     <label class="form-label" for="email">Endereço de e-mail:</label>
                     <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu e-mail"
                         maxlength="50" minlength="10" required>
                 </div>
 
-                <div class="col md 3">
+                <div class="col-md-2">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="destination1" className="radios"
                             name="destinations" value="Cidade" required>
@@ -53,13 +54,14 @@
                     </div>
                 </div>
 
-                
-                <label for="why">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso
-                    TrybeTrip?</label>
-                <br />
-                <textarea name="why" id="why" cols="60" rows="10"
-                    placeholder="Digite sua resposta vencedora aqui"></textarea>
-                <br />
+                <div class="col-md-10">
+                    <label class="form-label" for="why">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso
+                        TrybeTrip?</label>
+                    <br />
+                    <textarea class="form-control" name="why" id="why" cols="60" rows="10"
+                        placeholder="Digite sua resposta vencedora aqui"></textarea>
+                    <br />
+                </div>
 
                 <label for="date">Qual a melhor data para realizar sua viagem?</label>
                 <input type="date" id="date">
@@ -68,16 +70,16 @@
                 <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
                 <input type="checkbox" name="promo" id="promo">
                 <br />
-
+                
                 <label for="agreement">Concordo que imagens de minhas férias poderão ser usadas na divulgação de
                     concursos futuros.</label>
                 <input type="checkbox" name="agreement" id="agreement" required>
                 
-                <div class="col md-12">
+                <div class="col-md-12">
                     <button class="btn btn-primary" type="submit" id="submit-btn" disabled>Participar do concurso TrybeTrip</button>
                     <button class="btn btn-secondary" type="button" id="clear-btn">Apagar informações</button>
                 </div>
-            </fieldset>
+            <!-- </fieldset> -->
         </form>
     </div>
 </body>
