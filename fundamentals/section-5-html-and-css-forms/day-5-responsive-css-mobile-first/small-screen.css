@@ -87,6 +87,10 @@ p {
     body {
         margin: 6vh;
     }
+
+    article {
+        max-width: 80%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
