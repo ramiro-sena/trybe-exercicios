@@ -61,6 +61,12 @@ p {
     body {
         margin: 3rem
     }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
