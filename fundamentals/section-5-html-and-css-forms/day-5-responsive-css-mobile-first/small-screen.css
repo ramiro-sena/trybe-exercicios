@@ -83,6 +83,10 @@ p {
     h1 {
         font-size: xxx-large;
     }
+    
+    body {
+        margin: 6vh;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
