@@ -1,0 +1,110 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+/* Extra small devices (phones, 600px and down) */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0.8rem;
+}
+
+article {}
+
+h2 {}
+
+img {
+    max-width: 100%;
+}
+
+main {}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+figcaption {
+    font-size: .8em;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+p {
+    font-size: medium;
+}
+
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: large;
+    }
+     
+    body {
+        margin: 3rem
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width:fit-content;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p {
+        font-size: x-large;
+    }
+    
+    h1 {
+        font-size: xxx-large;
+    }
+    
+    body {
+        margin: 6vh;
+    }
+
+    article {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        grid-template-columns: repeat(3, 1fr)
+    };
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
