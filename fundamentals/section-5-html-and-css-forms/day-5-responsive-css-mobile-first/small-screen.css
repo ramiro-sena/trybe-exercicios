@@ -57,6 +57,10 @@ p {
     p {
         font-size: large;
     }
+     
+    body {
+        margin: 3rem
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
