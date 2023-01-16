@@ -66,7 +66,12 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width:fit-content;
     }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
