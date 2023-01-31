@@ -39,7 +39,7 @@ const smallerName = (library) => {
 //     releaseYear: 1991,
 //   };
 
-const getNamedBook = (books) =>  books.find((book) => book.name.length === 26);
+const getNamedBook = (books) => books.find((book) => book.name.length === 26);
 
 //console.log(getNamedBook(books));
 
@@ -48,8 +48,8 @@ const getNamedBook = (books) =>  books.find((book) => book.name.length === 26);
 // const expectedResult = false;
 
 function everyoneWasBornOnSecXX(books) {
-  // escreva seu código aqui
-  return books.every((book) => book.author.birthYear <= 2000 && book.author.birthYear >= 1900);
+    // escreva seu código aqui
+    return books.every((book) => book.author.birthYear <= 2000 && book.author.birthYear >= 1900);
 };
 
 // console.log(everyoneWasBornOnSecXX(books))
@@ -59,8 +59,28 @@ function everyoneWasBornOnSecXX(books) {
 //const expectedResult = true;
 
 const someBookWasReleaseOnThe80s = (books) => {
-  // escreva seu código aqui
-  return books.some((book) => book.releaseYear >= 1980 && book.releaseYear < 1990);  
+    // escreva seu código aqui
+    return books.some((book) => book.releaseYear >= 1980 && book.releaseYear < 1990);
 }
 
 // console.log(someBookWasReleaseOnThe80s(books))
+
+
+//Faça uma função que retorne true, caso nenhuma pessoa autora tenha nascido no mesmo ano, e false, caso contrário.
+// const expectedResult = false;
+
+const authorUnique = (books) => {
+    // escreva seu código aqui
+    const array = [];
+    let unique = true;
+    books.forEach((book) => {
+        console.log({year: book.author.birthYear});
+        if(array.includes(book.author.birthYear)){
+            unique = false;
+        };
+        array.push(book.author.birthYear)
+    });
+    return unique
+};
+
+console.log(authorUnique(books));
