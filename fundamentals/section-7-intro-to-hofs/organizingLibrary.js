@@ -41,7 +41,7 @@ const smallerName = (library) => {
 
 const getNamedBook = (books) =>  books.find((book) => book.name.length === 26);
 
-console.log(getNamedBook(books));
+//console.log(getNamedBook(books));
 
 //Faça uma função que retorne true se todas as pessoas autoras tiverem nascido no século XX, ou false, caso contrário.
 
@@ -49,7 +49,7 @@ console.log(getNamedBook(books));
 
 function everyoneWasBornOnSecXX(books) {
   // escreva seu código aqui
-  return books.every((book) => book.author.birthYear <= 2000 && book.author.birthYear >= 1000);
+  return books.every((book) => book.author.birthYear <= 2000 && book.author.birthYear >= 1900);
 };
 
-//console.log(everyoneWasBornOnSecXX(books))
+console.log(everyoneWasBornOnSecXX(books))
