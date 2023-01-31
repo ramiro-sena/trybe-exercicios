@@ -12,10 +12,10 @@ const authorBornIn1947 = () => {
 
 //const expectedResult = 'Duna';
 const smallerName = (library) => {
-    let nameBook = library[0].name;
+    let nameBook;
     // escreva aqui o seu código
     library.forEach((book) => {
-        if (book.name.length < nameBook.length){
+        if (!nameBook || book.name.length < nameBook.length){
             nameBook = book.name;
         }
     })
