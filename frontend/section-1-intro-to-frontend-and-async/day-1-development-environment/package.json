@@ -4,6 +4,7 @@
   "description": "A simple field validator app using validator module.",
   "main": "index.js",
   "scripts": {
+    "dev": "npx vite dev --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ramiro Sena",
