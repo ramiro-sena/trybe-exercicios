@@ -1,7 +1,7 @@
 {
   "name": "field-validator",
   "version": "1.0.0",
-  "description": "A simple email and CPF field validator using validator module.",
+  "description": "A simple field validator app using validator module.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
